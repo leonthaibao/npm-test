@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leonthaibao/npm-test"
+  },
   "license": "ISC"
 }
