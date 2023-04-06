@@ -1,6 +1,6 @@
 {
   "name": "@leonthaibao/npm-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/leonthaibao/npm-test"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "ISC"
 }
