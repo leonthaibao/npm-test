@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+      - name: Compile the package
+        run: |
+          npm run build
       - name: Publish package to GitHub Packages
         run: |
           npm publish --access public
@@ -31,6 +34,9 @@ jobs:
         with:
           node-version: 16
           registry-url: "https://registry.npmjs.org"
+      - name: Compile the package
+        run: |
+          npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
