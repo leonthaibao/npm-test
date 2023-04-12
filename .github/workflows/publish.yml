@@ -53,3 +53,4 @@ jobs:
         uses: softprops/action-gh-release@v0.1.15
         with:
           token: ${{secrets.GITHUB_TOKEN}}
+          generate_release_notes: true
