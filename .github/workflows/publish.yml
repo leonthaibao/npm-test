@@ -2,7 +2,7 @@ name: Publish package to GitHub Packages
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
 
 jobs:
   github-packages:
@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      
+
       - name: Compile the package
         run: |
           npm run build
@@ -48,6 +48,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: GH Release
-          uses: softprops/action-gh-release@v0.1.15
-
-
+        uses: softprops/action-gh-release@v0.1.15
